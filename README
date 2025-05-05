@@ -2,6 +2,9 @@
 
 A simple Flask API to analyze text sentiment using TextBlob.
 
+## To the api
+Go to : 'https://cicd-m1-back-sent.onrender.com/apidocs'
+
 ## How to Run
 
 ### Local
