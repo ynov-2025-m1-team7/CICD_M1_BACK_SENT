@@ -1,0 +1,37 @@
+# Sentiment Analysis API
+
+A simple Flask API to analyze text sentiment using TextBlob.
+
+## To the api
+Go to : 'https://cicd-m1-back-sent.onrender.com/apidocs'
+
+## How to Run
+
+### Local
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Start the server:
+   ```bash
+   python sentiment_service.py
+   ```
+3. Open `http://localhost:5000/apidocs` for Swagger UI.
+
+### Docker
+1. Build and run:
+   ```bash
+   docker-compose up
+   ```
+2. Open `http://localhost:5000/apidocs` for Swagger UI.
+
+## API Endpoint
+- **POST /analyze**
+  - Input: `{ "text": "Your text here" }`
+  - Output: `{ "score": 0.5 }`
+
+## Tools Used
+- Flask
+- TextBlob
+- Docker
+- Swagger (via Flasgger)
